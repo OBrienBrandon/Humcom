@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<meta name="viewport" content="with=device-width, initial-scale=1.0">
+<html>
+<head>
+    <title>O'Brien, Brandon C.</title>
+<style>
+    ul{
+  float: right;
+  list-style-type: none;
+}
+ul li{
+  display: inline-block;
+}
+ul li a{
+  text-decoration: none;
+  background-color: #000;
+  color:rgb(234, 230, 230);
+  padding: 10px 45px;
+  border: 4px solid #000;
+}
+ul li a:hover{
+      background-color: rgb(0, 0, 0);
+      color: #000;
+}
+
+legend {
+  text-decoration: none;
+  color:rgb(234, 230, 230);
+  padding: 1px 1px;
+}
+
+* {
+  box-sizing: border-box;
+
+}
+
+.button {
+        background-color: #1c87c9;
+        -webkit-border-radius: 60px;
+        border-radius: 60px;
+        border: none;
+        color: #eeeeee;
+        cursor: pointer;
+        display: inline-block;
+        font-family: sans-serif;
+        font-size: 25px;
+        padding: 5px 15px;
+        text-align: center;
+        text-decoration: none;
+      }
+      @keyframes glowing {
+        0% {
+          background-color: #000000;
+          box-shadow: 0 0 5px #ffffff;
+        }
+        50% {
+          background-color: #000000;
+          box-shadow: 0 0 20px #ffffff;
+        }
+        100% {
+          background-color: #000000;
+          box-shadow: 0 0 5px #ffffff;
+        }
+      }
+      .button {
+        animation: glowing 1300ms infinite;
+      }
+
+      .btn1{
+   	    margin-right: 50px;
+   	}
+
+#demo {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(0, 0, 0);
+  padding: 10px 60px;
+  color: white;
+}
+
+h1 {
+  font-size: 5rem;
+  text-transform: capitalize;
+  text-shadow: 1px 1px 1px rgb(16, 16, 219),
+               2px 2px 1px rgb(255, 255, 255);
+  text-align: center;
+}
+
+h2 {
+  font-size: 5rem;
+  text-transform: capitalize;
+  text-shadow: 1px 1px 1px rgb(243, 243, 243),
+               2px 2px 1px rgb(255, 255, 255);
+  text-align: center;
+}
+
+h1 + p {
+  font-weight: bold;
+}
+
+h2 + p {
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.5rem;
+  color: rgb(254, 254, 254);
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+body{
+    background-image: url("Baguio1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right top;
+    margin-right: 200px;
+}
+
+.column {
+  float: left;
+  padding: 50px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.menu {
+  width: 100%;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 10px;
+  margin-bottom: 8px;
+  background-color: #33b5e5;
+  color: #ffffff;
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+</style>
+</head>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<body background="Brandon1.jpg">
+<img src="Logo.png" style="width:20%;height:20%;float:left;">
+    <div class="main">
+      <ul>
+        <space class="btn1"><a class="button" href="Finals project.html">Home</a></space>
+        <space  class="btn1"><a class="button" href="Photo.html">Gallery</a></space>
+        <space  class="btn1"><a class="button" href="Location Map.html">Maps</a></space>
+        <space  class="btn1"><a class="button" href="Contact Us.html">Contact Us</a></space>
+    </ul>
+    </div>
+    
+
+    <div id="demo">
+    </div>
+    <script>
+      let myVar = setInterval(myTimer ,1000);
+      function myTimer() {
+        const d = new Date();
+        document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+        document.getElementById("demo").style.left = "1100px";
+      }
+      
+      </script>
+
+<div class="clearfix">
+  <div class="column menu">
+    <a class="button" href ="Parks.html">Parks in Baguio</a><br><br>
+    <a class="button" href ="The Food.html">Foods</a><br><br>
+    <a class="button" href ="Museum.html">Museum</a>
+  </div>
+</div>
+
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 8</div>
+        <img src="food1.jpg" style="width:1250px;height:500">
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 8</div>
+        <img src="food2.jpg" style="width:1250px;height:500">
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 8</div>
+        <img src="food3.jpg" style="width:1250px;height:500">
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 8</div>
+        <img src="food4.jpg" style="width:1250px;height:500">
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">5/ 8</div>
+        <img src="food5.jpg" style="width:1250px;height:500">
+      </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">6/ 8</div>
+        <img src="food6.jpg" style="width:1250px;height:500">
+      </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">7/ 8</div>
+        <img src="food7.jpg" style="width:1250px;height:500">
+      </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">8/ 8</div>
+        <img src="food8.jpg" style="width:1250px;height:500">
+      </div>
+      </div>
+
+ <div>
+    <p>
+        <fieldset style="text-align:center;"> <img src="food1.jpg" alt="Night Market" style="float:left;width:1200px;height:500px;">
+            <legend ><h1><p style="font-size:50px;"><u>𝐵𝓊𝓁𝒶𝓁𝑜 𝒮𝓉𝑒𝒶𝓀 </u></p></h1></legend>
+            <fieldset><h3><p style="color:rgb(255, 255, 255);"style="font-size:25px;text-align:center;"><u>One of Baguio’s young but reputable restaurants 
+                in the city is a quaint restaurant named Sage. Sage offers classic fusion dishes with a twist. 
+                The Bulalo Steak is one prime example.
+                <br>
+                <br>
+                When one speaks of bulalo, it’s all about the bone marrow and its soup. Sage takes away the latter and substitutes it for a creamy sauce with gravy on the side which further enhances the bulalo flavor we all have come to love. Yes, it’s different but still manages to hit so close to home.</u></h3></fieldset>
+      </fieldset>
+  </p>
+  </div>
+
+  <div>
+  <p>
+        <fieldset style="text-align:center;"> <img src="Night.jpg" alt="Night Market" style="float:left;width:1200px;height:500px;">
+          <legend ><h1><p style="font-size:50px;"><u>𝒩𝒾𝑔𝒽𝓉 𝑀𝒶𝓇𝓀𝑒𝓉</u></p></h1></legend>
+          <fieldset><h2><p style="color:rgb(255, 255, 255);"style="font-size:25px;text-align:center;"><u>Besides experiencing the city’s 
+            vibrant arts scene, tourists in Baguio find it hard to leave without at least trying to find something from 
+            the popular Night Market. It’s a flea market where you can find almost any type of casual clothing you can 
+            think of: jeans, sneakers, dress shoes, jackets, and the like. It takes up half of Harrison Road, 
+            located northeast of Burnham Park, and starts between 9 and 9:30 pm.</u></h2></fieldset>
+        </fieldset>
+  </p>
+</div>
+
+<div>
+  <p>
+    <fieldset style="text-align:center;"> <img src="food2.jpg" alt="Night Market" style="float:left;width:1200px;height:500px;">
+        <legend ><h1><p style="font-size:50px;"><u>𝐵𝒶𝑔𝓊𝒾𝑜 𝐿𝑜𝓃𝑔𝑔𝒶𝓃𝒾𝓈𝒶</u></p></h1></legend>
+        <fieldset><h2><p style="color:rgb(255, 255, 255);"style="font-size:25px;text-align:center;"><u>When it 
+            comes to longganisa, Baguio has gotten quite the reputation. It has a rich history that dates 
+            back to the ‘40s marked by the discovery of its own native longganisa, the Baguio Longganisa. 
+            This original longganisa is called Dipasupil which is named after its founders, and has been 
+            the go-to recommendation for many locals and celebrities.
+            <br>
+            <br>
+            The meat could be found at the Public Market. The founders perfected its recipe for 
+            the garlicky de recado and the sweet hamonado variant. It’s also good to note that it's only 
+            made of pork and spices with no preservatives added.</u></h2></fieldset>
+      </fieldset>
+  </p>
+</div>
+
+<div>
+  <p>
+      <fieldset style="text-align:center;"> <img src="food3.jpg" alt="Night Market" style="float:left;width:1200px;height:500px;">
+        <legend ><h1><p style="font-size:50px;"><u>𝒫𝒶𝓉𝒶𝓉𝒾𝓂</u></p></h1></legend>
+        <fieldset><h2><p style="color:rgb(255, 255, 255);"style="font-size:25px;text-align:center;"><u>
+            Nearly everyone’s family has a Chinese restaurant they always go to. In Baguio, that restaurant would 
+            be Rose Bowl. Rose Bowl is home-grown and started out as “Rice Bowl” back in 1945. Patatim is 
+            the dish we think best represents the restaurant. This hearty dish comes with lean meat in 
+            brown soup with a side of kangkung that's perfect for sharing with family.</u></h2></fieldset>
+      </fieldset>
+  </p>
+</div>
+
+<div>
+  <p>
+      <fieldset style="text-align:center;"> <img src="food4.jpg" alt="Night Market" style="float:left;width:1200px;height:500px;">
+        <legend ><h1><p style="font-size:50px;"><u>𝒮𝓉𝓇𝒶𝓌𝒷𝑒𝓇𝓇𝓎 𝒮𝒽𝑜𝓇𝓉𝒸𝒶𝓀𝑒</u></p></h1></legend>
+        <fieldset><h2><p style="color:rgb(255, 255, 255);"style="font-size:25px;text-align:center;"><u>
+            It almost doesn't need an introduction. Vizco’s popular Strawberry Shortcake is considered one of
+             the best not only in the City of Pines, but also in the whole of Philippines. 
+             The cake has always been sweet but perfectly balanced. It’s light yet oh so irresistible!</u></h2></fieldset>
+      </fieldset>
+  </p>
+</div>
+
+<div>
+<p>
+      <fieldset style="text-align:center;"> <img src="food5.jpg" alt="Night Market" style="float:left;width:1200px;height:500px;">
+        <legend ><h1><p style="font-size:50px;"><u>𝒰𝒷𝑒 𝒥𝒶𝓂, 𝒮𝓉𝓇𝒶𝓌𝒷𝑒𝓇𝓇𝓎 𝒥𝒶𝓂 & 𝒫𝑒𝒶𝓃𝓊𝓉 𝐵𝓇𝒾𝓉𝓉𝓁𝑒</u></p></h1></legend>
+        <fieldset><h2><p style="color:rgb(255, 255, 255);"style="font-size:25px;text-align:center;"><u>
+            If you're bringing home a taste of Baguio, Good Shepherd is your one-stop shop for all your pasalubong
+             treats. Ube Jam, Strawberry Jam, and Peanut Brittle never fail to put a smile on any receiver’s face. 
+             It’s sweet and just outright fun to snack on. Eat the jams with bread or on its own. 
+             From personal experience, it's best to get an extra jar or two!</u></h2></fieldset>
+      </fieldset>
+    </p>
+</div>
+
+<div>
+  <p>
+      <fieldset style="text-align:center;"> <img src="food6.jpg" alt="Night Market" style="float:left;width:1200px;height:500px;">
+        <legend ><h1><p style="font-size:50px;"><u>𝑅𝒶𝒾𝓈𝒾𝓃 𝐵𝓇𝑒𝒶𝒹</u></p></h1></legend>
+        <fieldset><h2><p style="color:rgb(255, 255, 255);"style="font-size:25px;text-align:center;"><u>
+            If there’s any treat a Baguio local would recommend that isn’t Good Shepherd, 
+            it would probably be the raisin bread from Baguio Country Club. For years, the exclusive group has 
+            been producing this scrumptious pastry that's well-loved by locals and visitors alike.</u></h2></fieldset>
+      </fieldset>
+  </p>
+</div>
+
+<div>
+  <p>
+      <fieldset style="text-align:center;"> <img src="food7.jpg" alt="Night Market" style="float:left;width:1200px;height:500px;">
+        <legend ><h1><p style="font-size:50px;"><u>𝐻𝑜𝓉 𝒞𝒽𝑜𝒸𝑜𝓁𝒶𝓉𝑒</u></p></h1></legend>
+        <fieldset><h2><p style="color:rgb(255, 255, 255);"style="font-size:25px;text-align:center;"><u>
+            Some say a trip to Baguio would not be complete without visitng Choco-Late de Batirol at least once. 
+            This rustic restaurant tucked in a quiet area of Camp John Hay. 
+            The traditional hot chocolate is a perfect treat to Baguio's cold weather, 
+            instantly warming the body with its signature sweet and distinct taste.</u></h2></fieldset>
+      </fieldset>
+  </p>
+</div>
+
+<div>
+  <p>
+      <fieldset style="text-align:center;"> <img src="food8.jpg" alt="Night Market" style="float:left;width:1200px;height:500px;">
+        <legend ><h1><p style="font-size:50px;"><u>𝑀𝑒𝓈𝓈𝒶𝑔𝑒 𝐼𝓃 𝒜 𝐵𝑜𝓉𝓉𝓁𝑒</u></p></h1></legend>
+        <fieldset><h2><p style="color:rgb(255, 255, 255);"style="font-size:25px;text-align:center;"><u>
+            Baguio’s finest craft beer is the perfect way to cap off the list. 
+            At the outskirts of the city is Baguio Craft Brewery. 
+            They have 21 craft beer taps and are known for their use of fresh local ingredients 
+            and uniquely-produced, handcrafted beers.
+            <br>
+            <br>
+            They have notable beers like the Message in a Bottle which is a dark India Pale Ale and the Lagud,
+             a sweet strawberry beer you'll be craving for long after your Baguio trip has ended.</u></h2></fieldset>
+      <p>
+      </fieldset>
+</div>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000);
+}
+</script>
+
+</body>
+</html>
